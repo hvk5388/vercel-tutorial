@@ -1,0 +1,30 @@
+<h1>Create A DockerFile</h1>
+<p>So you're interested in Docker? You came to the right spot. Today I'm going through what it is, a video tutorial on how to get started, and a tutorial on how to create a DockerFile.</p>
+<h2>What is Docker</h2>
+<p>Before you even install and try to run docker, you should probably understand what it is. Docker is a light-weight way of running a program through containers and microservices. Monolith Server Architecture is a thing of the past because we traditionally hosted resources in one environment. This made it versatile, but also heavy and very difficult to update changes. Microservices are used to split up tasks into specific operations. In the picture below, you can see all the small microservices one interface may be running on multiple machines. The whole functionality of a backend is now in thousands of containers all over the world.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q483pnmlbt8321ekuitl.png" alt="Docker Image"></p>
+<h2>Get started</h2>
+<p>You can follow this <a href="https://youtu.be/UOC5hksJoSM">tutorial</a> to learn more about how to run docker on your browser. Remember when copying and pasting into docker you may have to use <code>ctrl</code> <code>shift</code> <code>p</code>.</p>
+<h2>Create a DockerFile</h2>
+<ol>
+<li>Run your GitHub repo in the <a href="https://labs.play-with-docker.com/">docker playground</a>.</li>
+<li>Run <code>touch Dockerfile</code></li>
+<li>Select <code>Editor</code> to open the file system. You should see your file.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iq408hdikhprtv01uhxy.png" alt="Editor showing Dockerfile"></li>
+<li>Double click on the Dockerfile in order to edit its contents.</li>
+<li>Paste in the basic information shown below.</li>
+</ol>
+<pre><code># syntax=docker/dockerfile:1
+FROM node:12-alpine
+RUN apk add --no-cache python2 g++ make
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD [&quot;node&quot;, &quot;src/index.js&quot;]
+</code></pre>
+<ol start="6">
+<li>Run <code>docker build -t getting-started .</code></li>
+<li>Start the app with <code>docker run -dp 3000:3000 getting-started</code></li>
+<li>Open <a href="http://localhost:3000/">http://localhost:3000/</a>. You should see a running app.</li>
+</ol>
+<p>You now have a working Dockerfile! Congrats and keep coding!</p>

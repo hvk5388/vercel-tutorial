@@ -1,0 +1,71 @@
+<h1>How to create a GitHub Repostiory</h1>
+<p>GitHub is a wonderful tool for beginner programmers to learn how to use. It allows for saving code to the cloud and continuous integration. In order to use GitHub developers commit, or add, changes to code in a shared repository, or folder. This allows teams to work together and resolve issues early in the development process.</p>
+<h2>Create Repository</h2>
+<p><strong>1. Open GitHub in a Browser</strong>
+Pull up GitHub <a href="https://github.com/">here</a>.</p>
+<p><strong>2. Login or Create Account</strong>
+If you are creating an account, remember to save your password!</p>
+<p><strong>3. Create a New Repo</strong>
+Once you have successfully logged in, there will be a sidebar on the left of your screen. Click on the green <code>new</code> button with the book label.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tiyurg8gq0xcj7a7aolr.png" alt="Left Side Bar"></p>
+<p><strong>4. Follow the Steps to Add Basic Information</strong></p>
+<ul>
+<li>
+<p><em>Ensure <code>No template</code> is selected.</em> We are not using a template today, but you are welcome to experiment with this in the future.</p>
+</li>
+<li>
+<p><em>Choose a repository name.</em> This should be unique, which the site will tell you. You can also add a description to your repository.</p>
+</li>
+<li>
+<p><em>Decide public or private</em>. This is your personal preference.</p>
+</li>
+<li>
+<p><em>Select <code>Add a README file</code>.</em> This includes a blank initial file in your repository.</p>
+</li>
+</ul>
+<p>When you are done select the green <code>create repository</code> button.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rvqqja334wvx27pyu20r.png" alt="Basic Repository Creation"></p>
+<h2>Clone to Machine</h2>
+<p><strong>5. Click the Green Code Button</strong>
+At this point, your repository will have opened up. In order to get a copy on your own machine, select the green <code>code</code> button in the top right corner.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mhcytg99n0tsl7v32tti.png" alt="Repository Home"></p>
+<p><strong>6. Choose the Clone Option</strong>
+Chose the copy link button under the <code>Clone</code> section in order to get the repository copied to your clipboard.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lghro8vpelvzu755kq51.png" alt="Clone Button"></p>
+<p><strong>7. Open VS Code</strong>
+Using VS code, which you can download and install <a href="https://code.visualstudio.com/">here</a>, editing code is much easier. Terminals are included in the IDE for easy access.</p>
+<p><strong>8. Select <code>Clone Git Repository</code></strong>
+Select the clone git repository option on the hope page, under the start panel.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8wqrru14g7aslcvt4xrr.png" alt="VS Code Start Menu"></p>
+<p><strong>9. Paste in the Copied link</strong>
+Paste in the link we copied from GitHub into the box that says <code>provide repository URL</code>. Select Clone from URL.</p>
+<p><strong>10. Select or Create folder</strong>
+Choose where you want to locally find this code.</p>
+<p><strong>11. Open Repository</strong>
+Find a way to open the new cloned repository. There may be a popup on the right corner offering to open it. If you cannot find that you may select the <code>Open Folder</code> option in the start menu.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/732x4vn2lj18ofmemlws.png" alt="Open Repo Popup"></p>
+<h2>Make Changes</h2>
+<p><strong>12. Find README</strong>
+Open the README file, which you should see in the left side bar. Clicking on it will open it.</p>
+<p><strong>13. Edit the Code</strong>
+Add your changes to the code. The README is written in markdown. I just added a description to the repository.</p>
+<pre><code class="language-markdown"># helloworld
+
+This is a repository for teaching GitHub basics.
+</code></pre>
+<p><strong>14. Save</strong>
+Save your changes. You can also add more folders or files in any language. GitHub can handle it all.</p>
+<h2>Save to Github</h2>
+<p><strong>15. Open a Terminal</strong>
+Hover over the <code>Terminal</code> Header and select <code>New Terminal</code>.</p>
+<p><strong>16. Add Changes</strong>
+Click into the terminal and type in the command <code>git add .</code>. This will save your changes.</p>
+<p><strong>17. Commit Changes</strong>
+Use the command <code>git commit -m “added readme description”</code> to commit your changes with a message. You can decide what you want to write inside the quotes.</p>
+<p><strong>18. Pull</strong>
+Use the <code>git pull</code> command before pushing your changes up to the GitHub. This ensure that any changes a teammate has made is in your local branch.</p>
+<p><strong>19. Push</strong>
+Run the <code>git push</code> command. This will send any changes back to GitHub.</p>
+<h2>You did it!</h2>
+<p>In order to check that your changes were saved you can head back to GitHub. You will see a time stamp and commit message on the file.
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qd569i0e1hsm9k5udbg1.png" alt="Final Changes"></p>
